@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+ <html lang="en" ng-app="directivePractice">
+ <head>
+   <meta charset="UTF-8">
+   <!-- <link rel="stylesheet" href="style.css"> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <title>Directive Practice</title>
+ </head>
+ <body ng-controller="lessonCtrl">
+   {{test}}
+   <ul>
+     <lesson-hider lesson="item" day-alert="announceDay(lesson, day)" ng-repeat="item in dataArray"></lesson-hider>
+   </ul>
+
+   <!-- Javescript files for our Angular App -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+   <script src="app.js"></script>
+   <script src="lessonService.js"></script>
+   <script src="lessonCtrl.js"></script>
+   <script src="lessonHider.js"></script>
+ </body>
+ </html>
